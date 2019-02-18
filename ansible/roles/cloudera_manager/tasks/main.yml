@@ -45,11 +45,11 @@
   when: " cm_server == 'true'"
 
 - name: start the cloudera-manager server
-  shell: "{{cm_home}}/cm-5.9.0/cm-5.9.0/etc/init.d/cloudera-scm-server start"
+  shell: "{{cm_home}}/cm-5.9.0/etc/init.d/cloudera-scm-server start"
   when: " cm_server == 'true'"
 
 - name: start the cloudera-manager client
-  shell: "{{cm_home}}/cm-5.9.0/cm-5.9.0/etc/init.d/cloudera-scm-agent start"
-  when: " cm_client == 'true'"
+  shell: "{{cm_home}}/cm-5.9.0/etc/init.d/cloudera-scm-agent start"
+  when: " cm_agent == 'true'"
 
 
