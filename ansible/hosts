@@ -54,3 +54,10 @@ slave2 myid_value=3  namenode_active=false namenode_standby=false rm_active=fals
 master  ntpServer_enable=true   ntpClient_enable=false  cm_server=true   cm_agent=true
 slave1  ntpServer_enable=false  ntpClient_enable=true   cm_server=false  cm_agent=true
 slave2  ntpServer_enable=false  ntpClient_enable=true   cm_server=false  cm_agent=true
+
+
+
+[spark_cluster]
+master  master_active=true 
+slave1  master_active=false
+slave2  master_active=false
